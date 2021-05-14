@@ -1,0 +1,132 @@
+<div id="main-menu" class="main-menu">
+  <div class="container">
+    <div class="row main-menu__panel">
+      <a href="#sidr" class="main-menu__toggle js-menu-toggle"><span></span><span></span><span></span><span></span></a>
+      @@include('../search-bar/search-bar.html', {"class": "main-menu__search-bar"})
+      @@include('../cart-widget/cart-widget.html', {"class": "main-menu__cart-widget"})
+      <div id="sidr" class="main-menu__wrapper sidr left">
+        <div class="main-menu__top_panel">
+          @@include('../lang-selector/lang-selector.html', {"class": "main-menu__lang-sel"})
+          <a href="#" class="main-menu__mobile-close js-mobile-menu-close"></a>
+        </div>
+        <div class="main-menu__user-menu">
+          @@include('../user-menu/user-menu.html', {"class": ""})
+        </div>
+        <ul class="main-menu__main-list">
+          <li class="main-menu__item dropdown">
+            <a class="main-menu__link" data-toggle="dropdown" href="#">Киев <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <a class="main-menu__city-link" href="#"  title="Киев">другой город?</a>
+            <ul class="main-menu__submenu dropdown-menu text-left">
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#roses-kiev">Розы Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#kupit-cvety-kiev">Цветы Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#dostavka-buketov-kiev">Доставка букетов Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#101-roza-kiev">101 роза Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#51-roza-kiev">51 роза Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#orhidei-kiev">Орхидеи Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#komnatnye-cvety-kiev">Комнатные цветы Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#svadebnye-buketi-kiev">Свадебные букеты Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#fruktovye-buketi-kiev">Фруктовые букеты Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#podarki-kiev">Подарки Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#dostavka-cvetov-nedorogo-kiev">Доставка цветов недорого Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#tulpany-kiev">Тюльпаны Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#vip-buketi-kiev">VIP букеты Киев</a></li>
+              <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#dostavka-cvetov-kruglosutochno-kiev">Доставка цветов круглосуточно Киев</a></li>
+              <div class="main-menu__submenu-footer">
+                <a href="#" class="main-menu__submbenu-footer-btn">Другой город</a>
+              </div>
+            </ul>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#tsvety-tulips">🌷 Тюльпаны</a></li>
+          <li class="main-menu__item dropdown">
+            <a class="main-menu__link" data-toggle="dropdown" href="#">🌹 Розы <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="main-menu__submenu dropdown-menu text-left">
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#mestnye-rozy-poshtuchno">Местные розы</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#7-roz">7 роз</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#9-roz">9 роз</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#11-roz">11 роз</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#15-roz">15 роз</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#19-roz">19 роз</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#25-roz">25 роз</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#51-roza">51 роза</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#101-roza">101 роза</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#sinie-rozy">Синие розы</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#tsveti-bolshie-buketi-iz-roz">Большие букеты роз</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#premium-rozy-poshtuchno">Импортные розы</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#metrovie-rozy">Метровые розы</a></li>
+                <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#vysokie-rozy">Высокие розы</a></li>
+                <div class="main-menu__submenu-footer">
+                  <a href="#" class="main-menu__submbenu-footer-btn">Все букеты</a>
+                </div>
+            </ul>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#cvety-na-den-rozhdenija">День Рождения</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="/aktsii">💕 акции</a></li>
+          <li class="main-menu__item dropdown">
+            <a class="main-menu__link" data-toggle="dropdown" href="#">💐 Букеты <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="main-menu__submenu dropdown-menu">
+              <div class="main-menu__submenu-inner">
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+              </div>
+              <div class="main-menu__submenu-footer">
+                <a href="#" class="main-menu__submbenu-footer-link">Новинки</a>
+                <a href="#" class="main-menu__submbenu-footer-link">Новинки</a>
+                <a href="#" class="main-menu__submbenu-footer-link">Новинки</a>
+                <a href="#" class="main-menu__submbenu-footer-btn">Все букеты</a>
+              </div>
+            </ul>
+          </li>
+          <li class="main-menu__item dropdown">
+            <a class="main-menu__link" data-toggle="dropdown" href="#">🌸 Цветы <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="main-menu__submenu dropdown-menu">
+              <div class="main-menu__submenu-inner">
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+                @@include('../flower-list/flower-list.html', {"class": "main-menu__submenu-item"})
+              </div>
+              <div class="main-menu__submenu-footer">
+                <a href="#" class="main-menu__submbenu-footer-link">Новинки</a>
+                <a href="#" class="main-menu__submbenu-footer-link">Новинки</a>
+                <a href="#" class="main-menu__submbenu-footer-link">Новинки</a>
+                <a href="#" class="main-menu__submbenu-footer-btn">Все цветы</a>
+              </div>
+            </ul>
+          </li>
+          <li class="main-menu__item dropdown">
+            <a class="main-menu__link" data-toggle="dropdown" href="#">🎁 Подарки <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="main-menu__submenu dropdown-menu">
+              <div class="main-menu__submenu-inner">
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+                @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+              </div>
+              <div class="clearfix"></div>
+              <div class="menu_line"></div>
+              <div class="submenu_btn_block">
+                <a href="#podarki" class="go_to_all_btn">Все подарки <span class="flower_arrow"></span></a>
+              </div>
+            </ul>
+          </li>
+          <li class="main-menu__item dropdown">
+            <a class="main-menu__link" data-toggle="dropdown" href="#">👰🏻 Другое <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul class="main-menu__submenu dropdown-menu">
+              @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+              @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+              @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+              @@include('../submenu-link-col/submenu-link-col.html', {"class": "main-menu__submenu-item"})
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

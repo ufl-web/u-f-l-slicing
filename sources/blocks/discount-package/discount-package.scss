@@ -1,0 +1,122 @@
+.discount-package{
+  display: flex;
+  &__item{
+    flex: 0 1 33%;
+    margin: 0 20px;
+  }
+  &__info{
+    color: #333;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: SemiBold;
+    margin: 0 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__time-lbl{
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+  }
+  &__name{
+    margin: 0 0 10px;
+  }
+  &__price{
+    text-align: center;
+    margin: 0;
+  }
+  &__price-current{
+    font-size: 24px;
+  }
+  &__price-old{
+    color: red;
+    font-size: 12px;
+  }
+  &__timer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    margin: 0 auto 30px;
+  }
+  &__timer-item{
+    background-color: #ededed;
+    border-radius: 4px;
+    font-family: SemiBold;
+    padding: 4px 7px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+  }
+  &__add-to-cart{
+    background-color: #db8d21;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 6px 48px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover, &:focus{
+      background-color: lighten(#db8d21, 10);
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+}
+
+@media screen and (max-width: $screen-xs-max){
+  .discount-package{
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item{
+      flex: 0 0 45%;
+      margin: 0 5px;
+    }
+    &__time-left{
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      margin: 0 auto 20px;
+      flex: 1 0 100%;
+    }
+    &__timer{
+      margin: 0;
+      flex: 1 1 50%;
+      align-items: center;
+    }
+    &__time-lbl{
+      margin: 0;
+      flex: 1 0 50%;
+    }
+    &__timer-item{
+      padding: 2px 4px;
+    }
+    &__info{
+      margin: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 20px 30px 0;
+    }
+    &__price{
+      flex: 0 1 auto;
+      margin: 0 auto;
+    }
+    &__name{
+      flex: 1 1 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xxs-max){
+  .discount-package{
+    &__time-lbl{
+      font-size: 13px;
+    }
+    &__info{
+      padding: 20px 15px;
+    }
+  }
+}

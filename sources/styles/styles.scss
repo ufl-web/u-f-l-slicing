@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "variables";
+
+@import "font-awesome";
+
+@font-face {
+  font-display: swap;
+  font-family: "Regular";
+  font-style: normal;
+  font-weight: 400;
+  src:url("../resources/fonts/OpenSans-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src:url("../resources/fonts/OpenSans-SemiBold.woff2") format("woff2")
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: "Light";
+  font-style: normal;
+  font-weight: 300;
+  src:url("../resources/fonts/OpenSans-Light.woff2") format("woff2")
+}
+@import "bootstrap";
+@import "slick";
+
+body.sidr-open {
+  overflow: hidden;
+  transition: none;
+  position: static !important; /*override sidr behavior to allow select2 in sidr*/
+}
+body.sidr-open:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "node_modules/select2/src/scss/core.scss";
+@import '../blocks/*/*';

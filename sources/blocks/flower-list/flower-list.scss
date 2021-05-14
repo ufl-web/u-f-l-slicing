@@ -1,0 +1,92 @@
+.flowers-list{
+
+  &__letter{
+    color: #f38e00;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: Regular;
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__list-wrapper{
+    margin: 0 0 0 30px;
+    display: inline-block;
+  }
+  &__img{
+    content: "";
+    background: url(https://www.u-f-l.net/templates/2015/css/new_menu/sprite/menu_sprite.jpg?v=4) no-repeat -151px -368px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 0 15px 0 0;
+  }
+  &__name{
+    color: #000;
+    font-size: 15px;
+    font-family: Regular;
+    display: flex;
+    align-items: center;
+    &:hover{
+      color: #f38e00;
+      text-decoration: none;
+    }
+  }
+}
+
+.flower_alstromeria { background-position: -124px -368px; }
+.flower_amarillis { background-position: -151px -368px; }
+.flower_anturium { background-position: -124px -60px; }
+.flower_bambuk { background-position: -151px -60px; }
+.flower_brassika { background-position: -124px -87px; }
+.flower_brunia { background-position: -151px -87px; }
+.flower_chlopok { background-position: -124px -114px; }
+.flower_eustoma { background-position: -151px -114px; }
+.flower_frezia { background-position: -124px -141px; }
+.flower_gerbera { background-position: -151px -141px; }
+.flower_giacint { background-position: -124px -141px; }
+.flower_gipericum { background-position: -151px -343px; }
+.flower_gipsofila { background-position: -124px -193px; }
+.flower_gortenzia { background-position: -124px -168px; }
+.flower_gvozdika { background-position: -124px -218px; }
+.flower_hryzantema { background-position: -151px -218px; }
+.flower_iris { background-position: -124px -243px; }
+.flower_kally { background-position: -151px -243px; }
+.flower_klematis { background-position: -124px -268px; }
+.flower_leykodendron { background-position: -27px -339px; }
+.flower_lilia { background-position: -124px -293px; }
+.flower_limonium { background-position: -151px -293px; }
+.flower_lotos { background-position: -0px -312px; }
+.flower_narciss { background-position: -27px -312px; }
+.flower_orhydea { background-position: -124px -318px; }
+.flower_ornitogalum { background-position: -151px -318px; }
+.flower_pion { background-position: 0 -339px; }
+.flower_protea { background-position: -27px -339px; }
+.flower_roza { background-position: -124px -343px; }
+.flower_solidago { background-position: -151px -343px; }
+.flower_statica { background-position: 0 -366px; }
+.flower_trahelium { background-position: -27px -339px; }
+.flower_tulpan { background-position: -54px -370px; }
+.flower_veronika { background-position: -81px -370px; }
+.flower_sunflower {
+  background: url(/templates/2015/css/new_menu/sprite/sunflower.jpg) no-repeat;
+  border: solid 1px rgba(177, 175, 187, 1);
+}
+.flower_gladiolus:before {
+  background: url(/templates/2015/css/new_menu/sprite/gladiolus.jpg) no-repeat;
+  border: solid 1px rgba(177, 175, 187, 1);
+}
+.flower_lavender{
+  background: url(/templates/2015/css/new_menu/sprite/lavender.jpg?v=1) no-repeat;
+  border: solid 1px rgba(177, 175, 187, 1);
+}
+
+@media screen and (max-width: $screen-xs-max){
+  .flowers-list{
+    &__letter{
+      display: none;
+    }
+    &__list-wrapper{
+      margin: 0;
+    }
+  }
+}

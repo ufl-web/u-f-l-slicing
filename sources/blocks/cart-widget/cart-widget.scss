@@ -1,0 +1,27 @@
+.cart-widget{
+  &:hover{
+    text-decoration: none;
+  }
+  &__icon{
+    font-size: 19px !important;
+    color: #ff9000;
+    display: inline-block;
+    float: left;
+    margin: 0 5px 0 0;
+    text-align: left;
+    &:before{
+      @include fa-icon("\f291");
+    }
+  }
+  &__amount{
+    color: #000;
+    font-family: SemiBold;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  &__currency{
+    font-family: Regular;
+    font-size: 11px;
+  }
+
+}

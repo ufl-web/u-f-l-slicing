@@ -1,0 +1,66 @@
+.product-box{
+  height: auto;
+  padding-bottom: 24px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 5px 0;
+  box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.75);
+  &:hover{
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.75)
+  }
+  &__image{
+    margin: 0 auto;
+  }
+  &__title{
+    font-family: SemiBold;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    height: 45px; /* ~ two lines of text*/
+  }
+  &__price{
+    color: green;
+    font-family: SemiBold;
+    font-size: 12px;
+    line-height: 1.4;
+    min-height: 40px;
+  }
+  &__rating{
+    left: 12px;
+    position: absolute;
+    top: 4px;
+    color: #db8d21;
+    z-index: 5;
+    &-1:before {
+      @include fa-icon("\f005");
+    }
+    &-2:before {
+      @include fa-icon("\f005\f005");
+    }
+    &-3:before {
+      @include fa-icon("\f005\f005\f005");
+    }
+    &-4:before {
+      @include fa-icon("\f005\f005\f005\f005");
+    }
+    &-5:before {
+      @include fa-icon("\f005\f005\f005\f005\f005");
+    }
+    &:before {
+      color: #ff9000;
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xs-max){
+  .product-box{
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.75);
+    &__image{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

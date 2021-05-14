@@ -1,0 +1,65 @@
+.profile-menu{
+  &__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: max-height 0.5s ease-out;
+  }
+  &__item{
+    position: relative;
+    display: block;
+  }
+  &__link{
+    padding: 10px 15px;
+    color: #337ab7;
+    display: block;
+    &--active, &:hover, &:focus{
+      text-decoration: none;
+      background-color: #eee;
+      color: #db8d21;
+    }
+
+  }
+  &__menu-state{
+    display: none;
+  }
+  &__toggle{
+
+    background: #0067a9;
+    display: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    line-height: 32px;
+    font-size: 18px;
+    font-family: SemiBold;
+    text-align: left;
+    padding: 5px 15px;
+    color: #fff;
+    &:before{
+      @include fa-icon('\f078');
+      margin: 0 20px 0 0 ;
+      font-size: 20px;
+      transition: transform .3s;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xs-max){
+  .profile-menu{
+    margin: 15px 0 ;
+    &__list{
+      max-height: 0;
+      overflow: hidden;
+    }
+    &__menu-state:checked ~ .profile-menu__list{
+      max-height: 700px;
+    }
+    &__menu-state:checked ~ .profile-menu__toggle:before{
+      transform: rotate(-180deg);
+    }
+    &__toggle{
+      display: block;
+    }
+  }
+}

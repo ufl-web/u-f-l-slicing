@@ -1,0 +1,29 @@
+$screen-xxs-max:             450px !default;
+
+$fontArchivoNarrow : 'Archivo Narrow', sans-serif;
+$fontArchivo :  'Archivo', sans-serif;
+
+
+$primaryFont : $fontArchivo;
+$secondaryFont : $fontArchivoNarrow;
+
+/** FONT VARIABLES END*/
+
+
+@mixin icon($code){
+  font-family: 'icomoon';
+  content: $code;
+}
+
+@mixin fa-icon($code){
+  display:inline-block;
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  content: '#{$code}';
+}
+
+
+$fa-arrow-right: '\f061';

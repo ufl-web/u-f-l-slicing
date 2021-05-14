@@ -1,0 +1,31 @@
+.search-bar{
+  position: relative;
+  &__input[type="text"]{ /*tmp selector to override screen.css*/
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 0;
+    border: 1px solid #e9eaeb;
+    border-radius: 50px;
+    line-height: 30px;
+    outline: none;
+    padding: 0 40px 0 12px;
+  }
+  &__search-btn{
+      position: absolute;
+      right: 5px;
+      z-index: 5;
+      top: 4px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: 0 0;
+      border: none;
+      border-radius: 100%;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      background: transparent url(https://www.u-f-l.net/templates/2015/css/css_sprites.png?v=11) no-repeat scroll -301px -254px;
+  }
+}

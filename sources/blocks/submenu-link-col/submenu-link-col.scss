@@ -1,0 +1,69 @@
+.submenu-link-col{
+  margin: 25px 0 0 0;
+  &__title{
+    color: #f38e00;
+    text-align: left;
+    font-family: Regular;
+    position: relative;
+    padding: 0 0 0 70px;
+    margin: 15px 0 0 0;
+    line-height: 32px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: -15px;
+      left: 0;
+      background: url(https://www.u-f-l.net/templates/2015/css/new_menu/sprite/menu_sprite.jpg?v=4) no-repeat -2px -250px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  &__links{
+    padding: 0 0 0 70px;
+  }
+  &__link{
+    color: #000;
+    display: block;
+    font-family: Regular;
+    font-size: 15px;
+    line-height: 32px;
+    text-transform: none;
+    &:hover{
+      color: #f38e00;
+      text-decoration: none;
+    }
+  }
+}
+
+.flower_bouquets:before { background-position: -120px 0; width: 60px; height: 60px; }
+.flower_compassion:before { background-position: -60px 0px; width: 60px; height: 60px; }
+.flower_composition:before { background-position: -2px -1px; width: 60px; height: 60px; }
+.flower_decoration:before { background-position: -64px -59px; width: 60px; height: 60px; }
+.flower_frouts:before { background-position: -2px -63px; width: 60px; height: 60px; }
+.flower_valentin:before { background-position: -2px -395px; width: 60px; height: 60px; }
+.flower_valentin_sweets:before { background-position: -62px -395px; width: 60px; height: 60px; }
+.flower_valentin_gift:before { background-position: -122px -395px; width: 60px; height: 60px; }
+.flower_giftbox:before { background-position: -64px -121px; width: 60px; height: 60px; }
+.flower_greetings:before { background-position: -2px -125px; width: 60px; height: 60px; }
+.flower_happyness:before { background-position: -64px -183px; width: 60px; height: 60px; }
+.flower_baloon:before { background-position: -2px -187px; width: 60px; height: 60px; }
+.flower_romantic:before { background-position: -64px -250px; width: 60px; height: 60px; }
+.flower_single-flower:before { background-position: -2px -250px; width: 60px; height: 60px; }
+.flower_teddybear:before { background-position: -64px -307px; width: 60px; height: 60px; }
+
+
+@media screen and (max-width: $screen-xs-max){
+  .submenu-link-col{
+    margin: 0;
+    &__title{
+      display: none;
+    }
+    &__links{
+      padding: 0;
+    }
+    &__link{
+      line-height: 36px;
+    }
+  }
+}
